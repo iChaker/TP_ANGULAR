@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-6 col-ms-6">
+    <div class="form-group">
+      <label>Select Theme</label>
+        <select [(ngModel)]="themeSelected" class="form-control" id="theme">
+          <option *ngFor="let theme of themes" [value]="theme.name" >{{theme.name}}</option>
+        </select>
+
+    </div>
+  </div>
+  <div class="col-md-6 col-ms-6">
+    <p [ngClass]="themeSelected">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+

@@ -1,0 +1,17 @@
+
+.small {
+  color: #74b3ff;
+  font-size: 12px;
+  font-family: "Gill Sans";
+}
+.medium {
+  color: #ffb530;
+  font-size: 20px;
+  font-family: "cursive";
+}
+
+.big {
+  color: #ff2d25;
+  font-size: 25px;
+  font-family: system-ui;
+}

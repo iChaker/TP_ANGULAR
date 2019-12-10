@@ -1,0 +1,11 @@
+<p *ngIf="persons">total number of accepted CV {{persons.length }} </p>
+<p *ngIf="!persons">total number of accepted CV 0 </p>
+<ol class="list-group">
+
+  <li  *ngFor="let person of persons" class="list-group-item">
+    <img src="assets/images/{{person.path | defaultImage}}" width="50px" height="50px">
+    {{person.lastName}} {{person.firstName}}</li>
+
+
+</ol>
+
